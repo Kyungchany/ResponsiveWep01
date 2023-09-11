@@ -1,0 +1,89 @@
+
+//페스티벌  li
+@mixin festivalLi($radius) {
+  p#festival_maintitle {
+    font:bold 30px "Noto Sans KR";
+    color:#28374c;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+  }
+  p#festival_subtext {
+    font:normal 13px "Noto Sans KR";
+    color:#666666;
+    text-align: center;
+    padding-bottom: 76px;
+    box-sizing: border-box;
+  }
+
+  ul#festival_list {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  
+
+    @for $i from 1 to 5 {
+    li:nth-child(#{$i}) {
+      width:260px;
+      height:480px;
+      border-radius: $radius;
+      position: relative;
+      left:0px;
+      top:0px;
+
+      div.festival {
+        width:100%;
+        height:260px;
+        
+
+      p.festival_img {
+          width:100%;
+          height:220px;
+          background:url("/images/festival_img0#{$i}.png") no-repeat;
+          background-position: cover;
+      }
+      p.festival_date {
+        width:260px;
+        height:40px;
+        font:normal 12px/40px "Noto Sans KR";
+        text-align: center;
+        color:white;
+        background:#90a1b3;
+      }
+      
+
+    }
+    p.festival_title {
+      padding-top:30px;
+      padding-bottom: 23px;
+      box-sizing: border-box;
+      font:normal 16px "Noto Sans KR";
+      color:#28374c;
+    }
+    p.festival_text {
+      width:240px;
+      padding-bottom:50px;
+      box-sizing: border-box;
+      font:normal 12px "Noto Sans KR";
+      color:#999999;
+    }
+    button.festival_button {
+      width:135px;
+      height:45px;
+      border:solid 1px #29af89;
+      background:white;
+      color:$buttonColor;
+      font:normal 12px "Noto Sans KR";
+      position: absolute;
+      left:0px;
+      bottom:0px;
+    }
+
+      }
+    }
+  }
+}
+

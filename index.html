@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC반응형 연습01</title>
+    <link rel="stylesheet" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/common.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js' integrity='sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==' crossorigin='anonymous'></script>
+    <script src="/js/navi.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/culture.js"></script>
+    <script src="/js/scroll.js"></script>
+</head>
+
+<body>
+    
+    <ul id="skipmenulist">
+        <li><a href="#" class="hidden">최상단 영역 바로가기</a></li>
+        <li><a href="#" class="hidden">첫 번째 컨텐츠 바로가기</a></li>
+        <li><a href="#" class="hidden">두 번째 컨텐츠 바로가기</a></li>
+        <li><a href="#" class="hidden">하단 영역 바로가기</a></li>
+    </ul>
+
+
+    <!--상단 -->
+    <div id="header_wrap">
+        <header>
+            <h1 id="logo" class="hidden">로고<a href="#"><img src="/images/logoset.png" alt="홈페이지로고"></a></h1>
+    
+            <nav id="mainmenu">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul id="mainmenu_list">
+                    <li><a href="#">회사소개</a>
+                        <ul class="submenu_list">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">서비스</a>
+                        <ul class="submenu_list">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">포트폴리오</a>
+                        <ul class="submenu_list">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">게시판</a>
+                        <ul class="submenu_list">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="submenu_list">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                        </ul>
+                    </li>             
+                </ul>
+            </nav>
+             <button id="caster">문화캐스터</button>
+
+            <nav id="topmenu01">
+                <h2 class="hidden">소셜 네트워크 링크</h2>
+                <ul id="social_list">
+                    <li><a href="#"><img src="/images/img01.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="/images/img02.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="/images/img03.png" alt="???"></a></li>
+                    <li><a href="#"><img src="/images/img04.png" alt="핀터레스트"></a></li>
+                    <li><a href="#"><img src="/images/img05.png" alt="구글"></a></li>
+                </ul>
+            </nav>
+
+            <nav id="topmenu02">
+                <h2 class="hidden">홈페이지 전화번호 및 이메일 </h2>
+                <p id="glass"><img src="/images/glassimg.png" alt="검색 돋보기"></p>
+                <ul id="call_email">
+                    <li>Call Us: (+82)123.456.78</li>
+                    <li>stacore@stacore.co.kr</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- 비쥬얼 웹 -->
+    <div id="visual_wrap"> 
+        
+        <ul id="visual_list">
+            <li>
+                <div class="visual_text">
+                    <p class="visual_title">Korea Music<br></br>Festival 2020</p>
+                    <p class="visual_subtitle">8월의 여름날, 각각의 스테이지에서 당신이 좋아하는 아티스트를 KMF파크에서 만나보세요!</p>
+                    <button id="visual_button">LEARN MORE<i id="arrow" class="fa-solid fa-arrow-right-long"></i></button>
+                    <button id="quick">QUICK SERVICE</button>
+                </div>
+            </li>
+            <li>
+                <div class="visual_text">
+                    <p class="visual_title">Korea Music<br></br>Festival 2020</p>
+                    <p class="visual_subtitle">8월의 여름날, 각각의 스테이지에서 당신이 좋아하는 아티스트를 KMF파크에서 만나보세요!</p>
+                    <button id="visual_button">LEARN MORE<i id="arrow" class="fa-solid fa-arrow-right-long"></i></button>
+                    <button id="quick">QUICK SERVICE</button>
+                </div>
+            </li>
+            <li>
+                <div class="visual_text">
+                    <p class="visual_title">Korea Music<br></br>Festival 2020</p>
+                    <p class="visual_subtitle">8월의 여름날, 각각의 스테이지에서 당신이 좋아하는 아티스트를 KMF파크에서 만나보세요!</p>
+                    <button id="visual_button">LEARN MORE<i id="arrow" class="fa-solid fa-arrow-right-long"></i></button>
+                    <button id="quick">QUICK SERVICE</button>
+                </div> 
+            </li>
+        </ul> 
+        
+
+
+    </div>
+
+
+    <!-- 퀵서비스 영역 -->
+    <div id="quickservice_wrap">
+        <section id="quickservice">
+            <h2 class="hidden">퀵 서비스 영역</h2>
+            <div id="quickservice_text">
+                <p id="quickservice_maintext">예술가와 시민의 행복을 위한 문화예술공간</p>
+                <p id="quickservice_subtext">예술가들의 열정과 창의적 도전을 지원합니다. 시민들의 문화로 행복한 삶을 응원
+                합니다. 예술로 활기찬 도시, 서울을 만들어 갑니다.</p>
+            </div>
+
+            <ul id="quickservice_list">
+                <li>
+                    <div class="quickservice_list_img">
+                       
+                    </div>
+                    <p class="quickservice_list_title">대관신청</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                        
+                    </div>
+                    <p class="quickservice_list_title">프로그램신청</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                        
+                    </div>
+                    <p class="quickservice_list_title">통합신고센터</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                        <img src="/images/quickservice_img05.png" alt=""/>
+                    </div>
+                    <p class="quickservice_list_title">정보공개</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                       
+                    </div>
+                    <p class="quickservice_list_title">실시간SNS</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                        
+                    </div>
+                    <p class="quickservice_list_title">정책제안</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                        
+                    </div>
+                    <p class="quickservice_list_title">정보공개청구</p>
+                </li>
+                <li>
+                    <div class="quickservice_list_img">
+                        
+                    </div>  
+                    <p class="quickservice_list_title">입찰공고</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+
+    <!-- 아트 스페이스 영역 -->
+    <div id="artspace_wrap">
+        <section id="artspace_contents">
+            <h2 class="hidden">아트 스페이스 영역</h2>
+            
+            <button id="artspace_button">ART SPACE</button>
+
+            <div id="artspace_info">
+                <p id="artspace_info_title">
+                    문화예술은 '더 즐겁고 다 행복한 문화도시를 만든다'
+                </p>
+                <p id="artspace_info_text">
+                    개관한 해에 '한국건축문화대상'을 받았고, 현대중공업의 지원에 따라 꾸준한 메세나 사업으로 2007년에 '
+                    한국메세나대상'을 수상하기도 했다. 현대예술관은 지하 3층, 지상 4층, 연면적 1만평에 스포츠동, 공연동,
+                    업무동 등 3개동 으로 되어 있고, 주요시설로는 962석의 대공연장과 스포츠 시설로는 실내체육관, 볼링장,
+                    인공암벽, 바디클리닉(GX룸), 라켓볼장을 운영하고 있으며, 배드민턴, 탁구(삭제), 농구, 라켓볼 등 실내스
+                    포츠 종목과 요가, 필라테스, 댄스 등 강좌들을 운영하며 다양한 회원층을 확보하고 있다. 
+                </p>
+
+            </div>
+
+            <ul id="artspace_contents_list">
+                <li>
+                    <p id="artspace_list_title">
+                        청춘마이크
+                    </p>
+                    <p id="artspace_list_text">
+                        고유의 특성을 활용한 지역 맞춤형 문화예술프로그램으로, 문화기획자, 문화예술단체 간의 협력
+                        을 통해 지역적 파급효과를 줄 수 있는 지역문화 콘텐츠 활성화 프로그램
+                    </p>
+                </li>
+                <li>
+                    <p id="artspace_list_title">
+                        지역특화프로그램
+                    </p>
+                    <p id="artspace_list_text">
+                        지자체와 민간이 협업을 통해 해당 지역의 문화적•지리적 자산을 활용하여 지역민과 관광객 등이
+                        직접 참여하고 즐길 수 있는 지역 특화형 프로그램 
+                    </p>
+                </li>
+                <li>
+                    <p id="artspace_list_title">
+                        이야기가 흐르는 예술여행
+                    </p>
+                    <p id="artspace_list_text">
+                        전통 음악을 문학과 연극으로 재해석한 음악극. 전통예술에 문학, 연기 등 흥미로운 요소를 가미
+                        하여 공연 문화의 다양성을 확보하고, 비인기 문화예술 분야의 활성화를 도모하는 프로그램 
+                    </p>
+                </li>
+            </ul>
+
+            <button id="artspace_learnmore">LEARN MORE</button>
+
+        </section>
+    </div>
+
+
+    <!-- 축제 영역 -->
+
+    <div id="festival_wrap">
+        <section id="festival_contents">
+            <h2 class="hidden">축제 컨텐츠 영역</h2>
+            <p id="festival_maintitle">예술로 더 새롭게! 추천행사</p>
+            <p id="festival_subtext">예술로 더 새로운 일상을 만드는 스타문화재단의 추천 행사를 만나보세요.</p>
+
+            <ul id="festival_list">
+                <li>
+                    <div class="festival">
+                        <p class="festival_img">
+
+                        </p>
+                        <p class="festival_date">JUNE 31, 2020  [Seoul Arts]</p>
+                    </div>
+                    <p class="festival_title">2018년 시민청 추석 놀이마당</p>
+                    <p class="festival_text">
+                        추석맞이 특별행사 <시민청 한마당> 민족 명절 추석에 
+                        "활력콘서트"공연과 "민속놀이 한마당"이 펼쳐질 시민
+                        청에서 함께해요
+                    </p>
+                    <button class="festival_button">LEARN MORE</button>
+                </li>
+                <li>
+                    <div class="festival">
+                        <p class="festival_img">
+
+                        </p>
+                        <p class="festival_date">JUNE 25, 2020  [Seoul Arts]</p>
+                    </div>
+                    <p class="festival_title">모두 다함께 예술로 상상극장</p>
+                    <p class="festival_text">
+                        모두 다함께 예술로 상상극장은 예술가와 함께 어린이
+                        극을 개발.제작하여 만들어진 어린이 특화 참여형 공연
+                        입니다. 
+                    </p>
+                    <button class="festival_button">LEARN MORE</button>
+                </li>
+                <li>
+                    <div class="festival">
+                        <p class="festival_img">
+
+                        </p>
+                        <p class="festival_date">JUNE 16, 2020  [Seoul Arts]</p>
+                    </div>
+                    <p class="festival_title">렛츠 댄스 페스티벌</p>
+                    <p class="festival_text">
+                        세계의 여러 장르의 춤과 문화를 함께 즐기는 세계문화
+                        댄스축제 '렛츠댄스페스티벌'.시민청에서 즐기는 세계
+                        의 춤과 문화! 
+                    </p>
+                    <button class="festival_button">LEARN MORE</button>
+                </li>
+                <li>
+                    <div class="festival">
+                        <p class="festival_img">
+
+                        </p>
+                        <p class="festival_date">JUNE 2, 2020  [Seoul Arts]</p>
+                    </div>
+                    <p class="festival_title">&#60;어쩌나, 어쩌다, 어쩌나&#62;</p>
+                    <p class="festival_text">
+                        1980년대와 2016년을 배경으로 ‘용감한 시민상’ 때문에
+                        엉뚱하게 꼬이고 얽힌 두 남자 그리고 ‘용기’에 관한 이야
+                        기다. 
+                    </p>
+                    <button class="festival_button">LEARN MORE</button>
+                </li>
+                
+            </ul>
+        </section>
+    </div>
+
+
+                <!-- 문화 영역 -->
+    <div id="culture_wrap">
+        <section id="culture">
+            <h2 class="hidden">문화영역</h2>
+            <p id="culture_maintitle">생활 속 문화, 행복한 일상</p>
+            <p id="culture_subtitle">문화가 있는 날 큐레이터가 추천하는 특별 프로그램을 확인하세요.</p>
+
+            <div id="culture_reservation">
+                <ul id="culture_list">
+                    <li>
+                        <div class="culture_img"></div>
+                        
+                        <div class="culture_info">
+                            <p class="culture_plan">기획공연</p>
+                            <p class="culuture_title">
+                                이태리 성악가 내한《오페라 갈라 콘서트》
+                            </p>
+                            <ul class="culture_infoname">
+                                <li>공연기간<span>2018.12.24 ~ 2018.12.24</span></li>
+                                <li>공연시간<span>20:00</span></li>
+                                <li>관람시간<span>추후공지예정</span></li>
+                                <li>관람등급<span>초등학생이상 입장가능(미취학아동 입장불가)</span></li>
+                                <li>공연장소<span>현대예술관 대공연장</span></li>
+                                <li>가격정보<span>R석 99,000원 / A석 77,000원 / B석 55,000원</span></li>
+                            </ul>
+                            <button id="reservation_button">예매하기</button>
+                            <button id="detail_button">상세보기</button>         
+                        </div>
+                    </li>
+                    <li>
+                        <div class="culture_img"></div>
+                        
+                        <div class="culture_info">
+                            <p class="culture_plan">기획공연</p>
+                            <p class="culuture_title">
+                                축제 02
+                            </p>
+                            <ul class="culture_infoname">
+                                <li>공연기간<span>2018.12.24 ~ 2018.12.24</span></li>
+                                <li>공연시간<span>20:00</span></li>
+                                <li>관람시간<span>추후공지예정</span></li>
+                                <li>관람등급<span>초등학생이상 입장가능(미취학아동 입장불가)</span></li>
+                                <li>공연장소<span>현대예술관 대공연장</span></li>
+                                <li>가격정보<span>R석 99,000원 / A석 77,000원 / B석 55,000원</span></li>
+                            </ul>
+                            <button id="reservation_button">예매하기</button>
+                            <button id="detail_button">상세보기</button>         
+                        </div>
+                    </li>
+                    <li>
+                        <div class="culture_img"></div>
+                        
+                        <div class="culture_info">
+                            <p class="culture_plan">기획공연</p>
+                            <p class="culuture_title">
+                                축제 03
+                            </p>
+                            <ul class="culture_infoname">
+                                <li>공연기간<span>2018.12.24 ~ 2018.12.24</span></li>
+                                <li>공연시간<span>20:00</span></li>
+                                <li>관람시간<span>추후공지예정</span></li>
+                                <li>관람등급<span>초등학생이상 입장가능(미취학아동 입장불가)</span></li>
+                                <li>공연장소<span>현대예술관 대공연장</span></li>
+                                <li>가격정보<span>R석 99,000원 / A석 77,000원 / B석 55,000원</span></li>
+                            </ul>
+                            <button id="reservation_button">예매하기</button>
+                            <button id="detail_button">상세보기</button>         
+                        </div>
+                    </li>
+                    <li>
+                        <div class="culture_img"></div>
+                        
+                        <div class="culture_info">
+                            <p class="culture_plan">기획공연</p>
+                            <p class="culuture_title">
+                                축제 04
+                            </p>
+                            <ul class="culture_infoname">
+                                <li>공연기간<span>2018.12.24 ~ 2018.12.24</span></li>
+                                <li>공연시간<span>20:00</span></li>
+                                <li>관람시간<span>추후공지예정</span></li>
+                                <li>관람등급<span>초등학생이상 입장가능(미취학아동 입장불가)</span></li>
+                                <li>공연장소<span>현대예술관 대공연장</span></li>
+                                <li>가격정보<span>R석 99,000원 / A석 77,000원 / B석 55,000원</span></li>
+                            </ul>
+                            <button id="reservation_button">예매하기</button>
+                            <button id="detail_button">상세보기</button>         
+                        </div>
+                    </li>
+                    <li>
+                        <div class="culture_img"></div>
+                        
+                        <div class="culture_info">
+                            <p class="culture_plan">기획공연</p>
+                            <p class="culuture_title">
+                                축제 05
+                            </p>
+                            <ul class="culture_infoname">
+                                <li>공연기간<span>2018.12.24 ~ 2018.12.24</span></li>
+                                <li>공연시간<span>20:00</span></li>
+                                <li>관람시간<span>추후공지예정</span></li>
+                                <li>관람등급<span>초등학생이상 입장가능(미취학아동 입장불가)</span></li>
+                                <li>공연장소<span>현대예술관 대공연장</span></li>
+                                <li>가격정보<span>R석 99,000원 / A석 77,000원 / B석 55,000원</span></li>
+                            </ul>
+                            <button id="reservation_button">예매하기</button>
+                            <button id="detail_button">상세보기</button>         
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="dot">
+                <ul id="dot_list">
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <button id="prev_btn"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next_btn"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+
+
+    <!-- 협력 파트너사 영역 -->
+    <div id="partner_wrap">
+        <section id="partner">
+            <h2 class="hidden">협력 파트너사 영역</h2>
+            <div id="partners">
+                <ul id="partner_list">
+                    <li><img src="/images/partner01.png" alt="비트코인"></li>
+                    <li><img src="/images/partner02.png" alt="페이비트"></li>
+                    <li><img src="/images/partner03.png" alt="라클"></li>
+                    <li><img src="/images/partner04.png" alt="코코"></li>
+                    <li><img src="/images/partner05.png" alt="마르즈"></li>
+                    <li><img src="/images/partner06.png" alt="어톰"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- 뉴스레터 영역  -->
+    <div id="newsletter_wrap">
+        <section id="newsletter">
+            <h2 class="hidden">뉴스레터 영역</h2>
+
+            <div id="newstitle">
+                <p id="news_maintitle">
+                    NEWSLETTER SIGN-UP
+                </p>
+                <p id ="news_subtitle">
+                    운영진이 엄선해서 보내드리는 최신마케팅 소식,동향,정보등을 메일로 받아보세요.
+                </p>
+            </div>
+
+            <div id="news_info">
+
+                <form>
+                    <input type="text" class="name_email"  placeholder="   Name   "/>
+                    <input type="text" class="name_email" placeholder="   Email Address   "/>
+                    <button id="submit">SUBMIT</button>
+                </form>
+
+
+            </div>
+
+        </section>
+    </div>
+
+        <!-- 하단영역 -->
+    <footer id="about_wrap">
+        <section id="about">
+            <h2 class="hidden">하단영역</h2>
+            <div id="aboutus">
+                <p class="about_title">About us</p>
+                <p id="aboutus_text">
+                    최고 수준의 문화예술 프로그램을 매년 유치하며
+                    문화와 예술의 대중화에 기여하고 있는 복합문화
+                    센터입니다.고품격 공연장과 미술관, 레저와 스포
+                    츠시설을 갖춘 복합문화센터로 문을 열었다.
+                </p>
+                <div id="aboutus_social">
+                    <ul>
+                        <li><a href="#"><img src="/images/img01.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="/images/img02.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="/images/img03.png" alt="???"></a></li>
+                        <li><a href="#"><img src="/images/img04.png" alt="핀터레스트"></a></li>
+                        <li><a href="#"><img src="/images/img05.png" alt="구글"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="quick_link">
+                <p class="about_title">Quick link</p>
+                <div id="quick_link_list">
+                    <ul>
+                        <li>문화재단 소개</li>
+                        <li>연혁</li>
+                        <li>이사회 명단</li>
+                        <li>문화재단 CI</li>
+                        <li>수상내역</li>
+                    </ul>
+                    <ul>
+                        <li>시민서비스 헌장</li>
+                        <li>개인정보처리방침</li>
+                        <li>이메일무단수집거부</li>
+                        <li>찾아오시는길</li>
+                        <li>직원찾기</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="twitter">
+                <p class="about_title">Latest Twitter</p>
+                <div id="twitter_text">
+                    @stacore 당사가 시공하는 ‘속초 스타 리센
+                    오션파크’의 강남 홍보관이 9월 6일 개관식을
+                    열었다.
+                </div>
+                <button id="contact_button">CONTACT US</button>
+            </div>
+
+            <div id="contact_us">
+                <p class="about_title">Contact us</p>
+                <div id="contact_us_list"> 
+                    <ul>
+                        <li>#129, Okhyeon-ro, Nam-gu, Ulsan Metrop
+                            olitan City, 802, Ulsan Venture Building
+                        </li>
+                        <li>
+                            Call Us: 1-800-123-1234
+                        </li>
+                        <li>
+                            stacore@stacore.co.kr
+                        </li>
+                        <li>
+                            Monday-Friday: 9:00 am - 06:00 pm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p id="reserved">
+                ⓒ INPLUS all rights reserved.
+            </p>
+        </section>
+    </footer>
+
+</body>
+</html>

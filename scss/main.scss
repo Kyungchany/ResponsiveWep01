@@ -1,0 +1,1306 @@
+$buttonColor:#29af8a;
+$buttonColor02:#435061;
+$newsletter:#a4b3c6;
+$fontColor:#28374c;
+$footerFontColor:#5c6a7c;
+
+//@import '/css/festivalLi.css';
+                          
+
+                          //축제영역
+                          @mixin festivalLi($radius) {
+                            p#festival_maintitle {
+                              font:bold 30px "Noto Sans KR";
+                              color:#28374c;
+                              text-align: center;
+                              padding-top: 100px;
+                              box-sizing: border-box;
+                              opacity:0;
+                            }
+                            p#festival_subtext {
+                              font:normal 13px "Noto Sans KR";
+                              color:#666666;
+                              text-align: center;
+                              padding-bottom: 76px;
+                              box-sizing: border-box;
+                              opacity:0;
+                            }
+                          
+                            ul#festival_list {
+                              width:100%;
+                              height:100%;
+                              display:flex;
+                              flex-wrap:wrap;
+                              flex-direction: row;
+                              justify-content: space-between;
+                            
+                          
+                              @for $i from 1 to 5 {
+                              li:nth-child(#{$i}) {
+                                width:260px;
+                                height:480px;
+                                border-radius: $radius;
+                                position: relative;
+                                left:0px;
+                                top:150px;
+                                opacity:0;
+                          
+                                div.festival {
+                                  width:100%;
+                                  height:260px;
+                                  
+                          
+                                p.festival_img {
+                                    width:100%;
+                                    height:220px;
+                                    background:url("/images/festival_img0#{$i}.png") no-repeat;
+                                    background-position: cover;
+                                }
+                                p.festival_date {
+                                  width:260px;
+                                  height:40px;
+                                  font:normal 12px/40px "Noto Sans KR";
+                                  text-align: center;
+                                  color:white;
+                                  background:#90a1b3;
+                                }
+                                
+                          
+                              }
+                              p.festival_title {
+                                padding-top:30px;
+                                padding-bottom: 23px;
+                                box-sizing: border-box;
+                                font:normal 16px "Noto Sans KR";
+                                color:#28374c;
+                              }
+                              p.festival_text {
+                                width:240px;
+                                padding-bottom:50px;
+                                box-sizing: border-box;
+                                font:normal 12px "Noto Sans KR";
+                                color:#999999;
+                              }
+                              button.festival_button {
+                                width:135px;
+                                height:45px;
+                                border:solid 1px #29af89;
+                                background:white;
+                                color:$buttonColor;
+                                font:normal 12px "Noto Sans KR";
+                                position: absolute;
+                                left:0px;
+                                bottom:0px;
+                              }
+                          
+                                }
+                              }
+                            }
+                          }
+                          
+
+                          //컬쳐영역
+                                      div.culture_img {
+              width:580px;
+              height:100%;
+              background:url("/images/cultureimg01.png") no-repeat center;
+              background-size: cover;
+              
+            }
+
+            div.culture_info {
+              width:580px;
+              height:100%;
+              padding-top:60px;
+              padding-left:50px;
+              box-sizing: border-box;
+              background: white;
+
+
+                p.culture_plan {
+                    width:70px;
+                    height:30px;
+                    background:#90a1b3;
+                    color:white;
+                    font:normal 12px/30px "Noto Sans KR";
+                    text-align: center;
+                    border-radius: 3px;
+                    margin-bottom:20px;
+                }
+                p.culuture_title {
+                  font:normal 24px "Noto Sans KR";
+                  color:#28374c;
+                  margin-bottom:25px;
+                }
+
+                ul.culture_infoname {
+                  width:100%;
+                  margin-bottom: 65px;
+
+                  li {
+                    position:relative;
+                    left:0px;
+                    top:0px;
+                    font:normal 13px "Noto Sans KR";
+                    color:#666666;
+                    padding-left: 8px;
+                    box-sizing: border-box;
+
+                    span {
+                      color:#959595;
+                      margin-left:28px;
+                    }
+
+                    ::before {
+                      content: "";
+                      display: block;
+                      width:3px;
+                      height:3px;
+                      background:#90a1b3;
+                      position:absolute;
+                      left:0px;
+                      top:10px;
+                    }
+
+                  }
+                }
+                button#reservation_button {
+                  width:130px;
+                  height:45px;
+                  background-color:$buttonColor;
+                  border-radius: 3px;
+                  border: none;
+                  color:white;
+                  font: normal 13px "Noto Sans KR";
+                }
+                
+                button#detail_button {
+                  width:130px;
+                  height:45px;
+                  background:white;
+                  border:solid 1px $buttonColor;
+                  border-radius: 3px;
+                  color:$buttonColor;
+                  font:normal 13px "Noto Sans KR";
+                }
+
+          }
+
+
+          
+
+
+
+
+
+
+//비주얼 영역//
+div#visual_wrap {
+    width: 100%;
+    height: 860px;
+    // background: url("/images/visualimg.png") no-repeat center;
+    // background-size:cover; 
+    position: relative;
+    left:0px;
+    top:0px;  
+
+    ul#visual_list {
+      width:100%;
+      height:100%;
+      position:relative;
+      left:0px;
+      top:0px;
+
+      li {
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0px;
+        top:0px;
+
+        div.visual_text {
+          width:1160px;
+          height:710px;
+          position:absolute;
+          left:50%;
+          margin-left:-580px;
+          bottom:0px;
+          text-align: center;
+       
+        
+          p.visual_title {
+            padding-top:180px;
+            box-sizing: border-box;
+            font:bold 80px/40px "Noto Sans KR";
+            color:white;
+          }
+          p.visual_subtitle {
+              font:normal 15px "Noto Sans KR";
+              color:white;
+              padding-top:36px;
+              padding-bottom:50px;
+              box-sizing: border-box;
+          }
+          button#visual_button {
+            width:200px;
+            height:50px;
+            background:none;
+            border:solid 2px white;
+            border-radius: 3px;
+            color:white;
+      
+            i#arrow {
+              padding-left:55px;
+            }
+          }
+          button#quick {
+            width:140px;
+            height:40px;
+            background:white;
+            border:none;
+            border-radius: 3px 3px 0px 0px;
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            font:normal 12px "Noto Sans KR";
+            color:#757c86;
+
+          }
+        }
+      }
+    }
+  }
+
+  ul#visual_list>li>div.visual_text {
+    
+  }
+  ul#visual_list>li:nth-child(2) {
+    
+    div.visual_text {
+      
+      p.visual_title {
+        color:rgb(103, 118, 103) !important; 
+      }
+      p.visual_subtitle {
+        color:rgb(103, 118, 103) !important; 
+      }
+      button#visual_button {
+        border:solid 2px rgb(103, 118, 103) !important;
+        color:rgb(103, 118, 103) !important; 
+       
+      }
+    }
+  }
+  ul#visual_list>li:nth-child(3) {
+    
+    div.visual_text {
+      
+      p.visual_title {
+        color:red !important; 
+      }
+      p.visual_subtitle {
+        color:red !important; 
+      }
+      button#visual_button {
+        border:solid 2px red !important;
+        color:red !important; 
+       
+      }
+    }
+  }
+
+
+
+  ul#visual_list>li:nth-child(1) {
+    background: url("/images/visualimg01.png") no-repeat center;
+    background-size:cover;
+    z-index:3;
+  }
+  ul#visual_list>li:nth-child(2) {
+    background: url("/images/visualimg02.png") no-repeat center;
+    background-size:cover;
+    // position:absolute;
+    z-index:2;
+  }
+  ul#visual_list>li:nth-child(3) {
+    background: url("/images/visualimg03.png") no-repeat center;
+    background-size:cover;
+    // position:absolute;
+    z-index:1;
+  }
+
+ 
+
+                          //퀵 서비스 영역//
+  div#quickservice_wrap {
+    width:100%;
+    height:180px;
+    margin-top:50px;
+    
+    section#quickservice {
+      width:1160px;
+      height:100%;
+      position:relative;
+      top:0px;
+      left:0px;
+      margin:0px auto;
+      
+      div#quickservice_text {
+        width:430px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        opacity:0;
+      }
+      p#quickservice_maintext {
+        width:100%;
+        height:100%;
+        font:bold 24px/16px "Noto Sans KR";
+        color:#28374c;
+        padding-top:58px;
+        box-sizing: border-box;
+      }
+      p#quickservice_subtext {
+        width:100%;
+        height:100%;
+        font:normal 13px/18px "Noto Sans KR";
+        padding-top:15px;
+        box-sizing: border-box;
+      }
+
+        ul#quickservice_list {
+          width:690px;
+          height:100%;
+          display:flex;
+          flex-wrap:wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          align-content: center;
+          position:absolute;
+          top:0px;
+          right:0px;
+          
+          li {
+            width:60px;
+            height:60px;
+            text-align: center;
+            position:relative;
+            left:0px;
+            top:-100px;
+            transition:0.2s ease-out;
+            opacity:0;
+            
+            &:hover {
+              background:yellow;
+
+              p.quickservice_list_title {
+                font:bold 12px "Noto Sans KR";
+                color:black;
+              }
+            }
+            
+          }
+          @for $i from 1 to 9 {
+            li:nth-child(#{$i})>div.quickservice_list_img {
+              width:60px;
+              height:60px;
+              line-height: 65px;
+              box-shadow: 2px 2px 5px rgb(204, 204, 204);
+              background:url("/images/quickservice_img0#{$i}.png") no-repeat center;
+            }
+          }
+          p.quickservice_list_title {
+            width:72px;
+            position:absolute;
+            left:50%;
+            margin-left:-36px;
+            top:70px;
+            font:normal 12px "Noto Sans KR";
+            color:#666666;
+            // background: black;
+          }
+        }
+    }
+  }
+
+
+
+                            // 아트 스페이스 영역 //
+    div#artspace_wrap {
+      width:100%;
+      height:520px;
+      background:url("/images/artspacevisual.png") no-repeat center;
+      background-size:cover;
+
+      section#artspace_contents {
+        width:1160px;
+        height:100%;
+        margin:0px auto;
+        position:relative;
+        right:0px;
+        top:0px;
+
+        button#artspace_button {
+          margin-top:80px;
+          width:100px;
+          height:30px;
+          background:#435061;
+          font:normal 12px "Noto Sans KR";
+          color:white;
+          border: none;
+          border-radius: 3px;
+          opacity:0;
+        }
+        button#artspace_learnmore {
+          margin-top:50px;
+          
+          width:130px;
+          height:45px;
+          background:white;
+          color:#757c86;
+          border: none;
+          border-radius: 3px;
+          opacity:0;
+        } 
+
+        div#artspace_info {
+          width:580px;
+          margin-top:40px;
+
+          
+          p#artspace_info_title {
+            width:100%;
+            font:bold 26px "Noto Sans KR";
+            color:white;
+            padding-bottom:23px;
+            box-sizing: border-box;
+            opacity:0;
+          }
+          p#artspace_info_text {
+            width:96%;
+            font:normal 13px "Noto Sans KR";
+            color:#ade7d7;
+            opacity:0;
+          }
+        }
+
+
+
+        ul#artspace_contents_list {
+          width:526px;
+          height:250px;
+          position:absolute;
+          top:150px;
+          right:13px;
+        }
+
+        @for $i from 1 to 4 {
+          li:nth-child(#{$i}) {
+            width:100%;
+            height:33.3%;
+            background: url("/images/artspaceimg0#{$i}.png") no-repeat 0px 0px;
+            opacity: 0;
+        }
+        li:nth-child(2) {
+          background-position: 5px 0px;
+        }
+
+          
+
+            p#artspace_list_title {
+              font:normal 14px "Noto Sans KR";
+              color:white;
+              padding-left: 70px;
+              box-sizing: border-box;
+            }
+            p#artspace_list_text {
+              font:normal 12px "Noto Sans KR";
+              color:#ade7d7;
+              padding-left: 70px;
+              box-sizing: border-box;
+            }
+         }
+      }
+    }
+
+
+                       // 축제 영역
+    div#festival_wrap {
+      width:100%;
+      height:820px;
+      
+      section#festival_contents {
+        width:1160px;
+        height:100%;
+        margin:0px auto;
+        position: relative;
+        left:0px;
+        top:0px;
+
+        @include festivalLi(1px 1px 0px 0px);
+        // p#festival_maintitle {
+        //   font:bold 30px "Noto Sans KR";
+        //   color:#28374c;
+        //   text-align: center;
+        //   padding-top: 100px;
+        //   box-sizing: border-box;
+        // }
+        // p#festival_subtext {
+        //   font:normal 13px "Noto Sans KR";
+        //   color:#666666;
+        //   text-align: center;
+        //   padding-bottom: 76px;
+        //   box-sizing: border-box;
+        // }
+
+        // ul#festival_list {
+        //   width:100%;
+        //   height:100%;
+        //   display:flex;
+        //   flex-wrap:wrap;
+        //   flex-direction: row;
+        //   justify-content: space-between;
+        
+
+        //   @for $i from 1 to 5 {
+        //   li:nth-child(#{$i}) {
+        //     width:260px;
+        //     height:480px;
+        //     border-radius: 1px 1px 0px 0px;
+        //     position: relative;
+        //     left:0px;
+        //     top:0px;
+
+        //     div.festival {
+        //       width:100%;
+        //       height:260px;
+              
+
+        //     p.festival_img {
+        //         width:100%;
+        //         height:220px;
+        //         background:url("/images/festival_img0#{$i}.png") no-repeat;
+        //         background-position: cover;
+        //     }
+        //     p.festival_date {
+        //       width:260px;
+        //       height:40px;
+        //       font:normal 12px/40px "Noto Sans KR";
+        //       text-align: center;
+        //       color:white;
+        //       background:#90a1b3;
+        //     }
+            
+
+        //   }
+        //   p.festival_title {
+        //     padding-top:30px;
+        //     padding-bottom: 23px;
+        //     box-sizing: border-box;
+        //     font:normal 16px "Noto Sans KR";
+        //     color:#28374c;
+        //   }
+        //   p.festival_text {
+        //     width:240px;
+        //     padding-bottom:50px;
+        //     box-sizing: border-box;
+        //     font:normal 12px "Noto Sans KR";
+        //     color:#999999;
+        //   }
+        //   button.festival_button {
+        //     width:135px;
+        //     height:45px;x
+        //     border:solid 1px #29af89;
+        //     background:white;
+        //     color:$buttonColor;
+        //     font:normal 12px "Noto Sans KR";
+        //     position: absolute;
+        //     left:0px;
+        //     bottom:0px;
+        //   }
+
+        //     }
+        //   }
+        // }
+      }
+    }
+
+                          // 문화 영역
+  div#culture_wrap {
+    width:100%;
+    height:850px;
+    background: #263549;
+    position: relative;
+    left: 0px;
+    top:0px;
+    overflow: hidden;
+  }
+
+  section#culture {
+      width:1160px;
+      height:100%;
+      margin:0px auto;
+      opacity: 0;
+  }
+
+  p#culture_maintitle {
+    font:normal 30px "Noto Sans KR";
+    color:white;
+    text-align: center;
+    padding-top:100px;
+    box-sizing: border-box;
+  }
+
+  p#culture_subtitle {
+    font:normal 13px "Noto Sans KR";
+    color:white;
+    text-align: center;
+    padding-bottom:75px;
+    box-sizing: border-box;
+  }
+
+  div#culture_reservation {
+    width:100%;
+    height:450px;
+  }
+       
+  ul#culture_list {
+    width:100%;
+    height:100%;
+    position: relative;
+    left:0px;
+    top:0px;
+    box-shadow: 45px 45px 45px #18212d;
+  }
+  ul#culture_list>li {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position:absolute;
+    left:0px;
+    top:0px;
+    opacity:0;
+  }
+  ul#culture_list>li:nth-child(1){
+    opacity:1;
+
+    div.culture_img {
+      width:580px;
+      height:100%;
+      background:url("/images/cultureimg01.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  @for $i from 2 to 6 {
+    ul#culture_list>li:nth-child(#{$i}){
+    
+        div.culture_img {
+          width:580px;
+          height:100%;
+          background:url("/images/cultureimg0#{$i}.png") no-repeat center;
+          background-size: cover;
+        }
+      }
+  }
+  div.culture_info {
+    width:580px;
+    height:100%;
+    padding-top:60px;
+    padding-left:50px;
+    box-sizing: border-box;
+    background: white;
+  }
+  p.culture_plan {
+    width:70px;
+    height:30px;
+    background:#90a1b3;
+    color:white;
+    font:normal 12px/30px "Noto Sans KR";
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom:20px;
+  }
+  p.culuture_title {
+    font:normal 24px "Noto Sans KR";
+    color:#28374c;
+    margin-bottom:25px;
+  }     
+  ul.culture_infoname {
+    width:100%;
+    margin-bottom: 65px;
+
+    li {
+      position:relative;
+      left:0px;
+      top:0px;
+      font:normal 13px "Noto Sans KR";
+      color:#666666;
+      padding-left: 8px;
+      box-sizing: border-box;
+
+      span {
+        color:#959595;
+        margin-left:28px;
+      }
+
+      ::before {
+        content: "";
+        display: block;
+        width:3px;
+        height:3px;
+        background:#90a1b3;
+        position:absolute;
+        left:0px;
+        top:10px;
+      }
+
+    }
+  }      
+  button#reservation_button {
+    width:130px;
+    height:45px;
+    background-color:$buttonColor;
+    border-radius: 3px;
+    border: none;
+    color:white;
+    font: normal 13px "Noto Sans KR";
+  }
+  
+  button#detail_button {
+    width:130px;
+    height:45px;
+    background:white;
+    border:solid 1px $buttonColor;
+    border-radius: 3px;
+    color:$buttonColor;
+    font:normal 13px "Noto Sans KR";
+  }
+
+
+    div#dot {
+      width:150px;
+      height:40px;
+      margin:45px auto;
+      
+      ul#dot_list {
+        width:100%;
+        height:100%;
+
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+
+        li {
+          width:18px;
+          height:18px;
+          background:#435061;
+          border-radius: 9px;
+          
+      
+        }
+      }
+    }
+    ul#dot_list>li.selected {
+      background: white !important;
+    }
+    
+
+
+  button#prev_btn {
+    width:60px;
+    height:60px;
+    border-radius: 3px;
+    border: none;
+    position:absolute;
+    top:425px;
+    left:12%;
+    color:#435061;
+    font-size:20px;
+    opacity: 0;
+
+  }
+  button#next_btn {
+    width:60px;
+    height:60px;
+    border-radius: 3px;
+    border: none;
+    position:absolute;
+    top:425px;
+    right:12%;
+    color:#435061;
+    font-size:20px;
+    opacity: 0;
+  }
+
+
+
+// 협력 파트너사 영역
+div#partner_wrap {
+  width:100%;
+  height:120px;
+}
+
+section#partner {
+  width:1160px;
+  height:120px;
+  margin:0px auto;
+}
+div#partners {
+  width:1160px;
+  height:120px;
+
+  ul#partner_list {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+    li {
+      position: relative;
+      top:-100px;
+      opacity: 0;
+    }
+  }
+}
+
+
+// 뉴스레터 영역
+div#newsletter_wrap {
+  width:100%;
+  height:120px;
+  background:$newsletter;
+}
+section#newsletter {
+  width:1160px;
+  height:100%;
+  margin:0px auto;
+  position:relative;
+  left:0px;
+  top:0px;
+  opacity:0;
+}
+div#newstitle {
+  width:40%;
+  height:120px;
+  float:left; 
+
+  p#news_maintitle {
+    font:normal 24px "Noto Sans KR";
+    color:$fontColor;
+    margin-top:40px;
+
+  }
+  p#news_subtitle {
+    font:normal 12px "Noto Sans KR";
+    color:#4d5f78;
+  }
+}
+div#news_info {
+  width:60%;
+  height:120px;
+  float: left;
+
+  form {
+    width:100%;
+    height:120px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    input.name_email {
+      width:250px;
+      height:45px;
+    }
+
+    button#submit {
+      width:100px;
+      height:51px;
+      background:#4d5f78;
+      border: none;
+      border-radius: 3px;
+    }
+  }
+}
+
+                 //하단영역
+footer#about_wrap {
+  width:100%;
+  height:390px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#435061+0,435061+84,3b4757+84,3b4757+84,3b4757+100 */
+background: #435061; /* Old browsers */
+background: -moz-linear-gradient(top,  #435061 0%, #435061 84%, #3b4757 84%, #3b4757 84%, #3b4757 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #435061 0%,#435061 84%,#3b4757 84%,#3b4757 84%,#3b4757 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #435061 0%,#435061 84%,#3b4757 84%,#3b4757 84%,#3b4757 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#435061', endColorstr='#3b4757',GradientType=0 ); /* IE6-9 */
+
+}
+
+section#about {
+  width:1160px;
+  height:100%;
+  margin:0px auto;
+  // display:flex;
+  // flex-wrap: wrap;
+  // flex-direction: row;
+  font:normal 12px/20px "Noto Sans KR";
+  color:$footerFontColor;
+  position:relative;
+  left:0px;
+  top:0px;
+  opacity:0;
+  
+}
+
+p.about_title {
+  color:white;
+  font:normal 14px "Noto Sans KR";
+  position:relative;
+  left: 0px;
+  top:60px;
+  
+  
+
+}
+div#aboutus {
+  width:25%;
+  height: 100%;
+  float: left;
+
+  p#aboutus_text {
+    width:90%;
+    height:85px;
+    margin-top:110px;
+  }
+  div#aboutus_social {
+    width:150px;
+    height:30px;
+    
+
+    ul {
+      width:100%;
+      height:100%;
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+}
+div#quick_link {
+  width:25%;
+  height: 100%;
+  float:left;
+
+  div#quick_link_list {
+    width:240px;
+    height:140px;
+    margin-top:110px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      padding-left:12px;
+      box-sizing: border-box;
+      background: url("/images/quicklink_img.png") no-repeat 0px 5px;
+    }
+  }
+}
+
+div#twitter {
+  width:25%;
+  height: 100%;
+  float:left;
+
+  div#twitter_text {
+    width:230px;
+    height:60px;
+    margin-top:110px;
+    margin-bottom:35px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: url("/images/img02.png") 0px 3px no-repeat;
+  }
+
+  button#contact_button {
+    width:120px;
+    height:40px;
+    background:#435061;
+    border:solid 1px #a4b4c4;
+    border-radius: 3px;
+    font:normal 12px "Noto Sans KR";
+    color:white;
+ }
+}
+
+
+div#contact_us {
+  width:25%;
+  height: 100%;
+  float:left;
+  
+  div#contact_us_list {
+    width:255px;
+    height:140px;
+    margin-top:110px;
+    
+    ul {
+      width:100%;
+      height:100%;
+
+      li {
+        padding-left:20px;
+        box-sizing: border-box;
+      }
+    }
+
+  }
+}
+
+p.about_title::after {
+    content: "";
+    display:block;
+    width:30px;
+    height:1px;
+    background:$footerFontColor;
+    position:absolute;
+    left:0px;
+    bottom:-26px;
+}
+
+p#reserved {
+  width:180px;
+  height:20px;
+  position:absolute;
+  left:50%;
+  margin-left:-90px;
+  bottom:5%;
+  
+  
+}
+
+div#contact_us_list>ul>li:nth-child(1) {
+  background:url("/images/img22.png") no-repeat 0px 0px;
+}
+div#contact_us_list>ul>li:nth-child(2) {
+  background:url("/images/topmenu02_img01.png") no-repeat;
+}
+div#contact_us_list>ul>li:nth-child(3) {
+  background:url("/images/topmenu02_img02.png") no-repeat 0px 3px;
+}
+div#contact_us_list>ul>li:nth-child(4) {
+  background:url("/images/img23.png") no-repeat 0px 3px;
+}
+
+
+  @media screen and (max-width:1200px) {
+
+    div.visual_text {
+     width: 100% !important;
+     left:50% !important;
+     margin-left:-50% !important;
+     
+   }
+
+   section#quickservice {
+     width:100% !important;
+     
+   }
+
+   div#quickservice_text {
+     width:100%  !important;
+     text-align: center  !important;
+   }
+
+   ul#quickservice_list {
+     width:100%  !important;
+     height:250px  !important;
+     left:50%  !important;
+     margin-left:-50%  !important;
+     top:70%  !important;
+    
+   }
+   ul#quickservice_list li{
+      width:25%  !important;
+      margin-top:20px  !important;
+    }
+
+    div.quickservice_list_img {
+     position:absolute !important;
+     left:50% !important;
+     margin-left:-30px !important;
+    }
+    
+    div#artspace_wrap {
+      margin-top:220px;
+      height:850px !important;
+    }
+
+    section#artspace_contents {
+      width:100% !important;
+    }
+
+    button#artspace_button {
+      left:50% !important;
+      margin-left:-50px !important;
+      position:absolute !important;
+    }
+    div#artspace_info {
+      width:100% !important;
+      position:absolute !important;
+      top:140px !important;
+      left:50% !important;
+      margin-left:-50% !important;
+      text-align: center !important;
+    }
+    p#artspace_info_text {
+      margin:0px auto !important;
+    }
+    ul#artspace_contents_list {
+      width:50% !important;
+      left:50% !important;
+      margin-left: -25%;
+      height:400px !important;
+      top:400px !important;
+    }
+
+    button#artspace_learnmore {
+      position:absolute !important;
+      bottom:0px !important;
+      left:50% !important; 
+      margin-left:-75px !important
+    }
+    p#artspace_info_text {
+      width:50% !important;
+      justify-content:space-evenly;
+    }
+
+    section#festival_contents {
+      width:100% !important;
+      
+    }
+
+    ul#festival_list{
+      width:600px !important;
+      margin:0px auto !important;
+    }
+   
+    ul#festival_list>li {
+      // width:40% !important;
+      margin-top:60px;
+    }
+
+
+    //문화영역 
+    div#culture_wrap {
+      height:1300px;
+      margin-top:600px;
+    }
+    section#culture {
+      width: 100% !important;
+    }
+    ul#culture_list {
+      width: 50% !important;
+      margin: 0px auto;
+      box-shadow: none !important ;
+    }
+    ul#culture_list>li {
+      width:50% !important;
+      display: block !important;
+      left:50% !important;
+      margin-left:-290px !important;
+    }
+    div#dot {
+      margin-top:550px !important;
+    }
+
+
+             // 협력 파트너사 영역
+    section#partner {
+      width:100%;
+    }
+    div#partners {
+        width: 100%;
+        height:120px;
+        margin:0px auto;
+    }
+
+    // 뉴스레터 영역
+    div#newsletter_wrap {
+      height:240px;
+    }
+    section#newsletter {
+      width:100%;
+
+      div#news_info {
+       margin-top:0px;
+      }
+    }
+    div#newstitle {
+      width:100% !important;
+
+      p#news_maintitle {
+        text-align: center !important;
+      }
+      p#news_subtitle {
+        text-align: center !important;
+      }
+    }
+    div#news_info {
+      width:100% !important;
+     
+      form {
+        justify-content: center;
+      }
+    }
+
+
+    //하단 영역
+    section#about {
+      width:100%;
+    }
+    div#quick_link_list {
+      width:100% !important;
+    }
+    div#twitter_text {
+      width:100% !important;
+    }
+    div#contact_us_list {
+      width:100% !important;
+    }
+    div#aboutus_social {
+      margin-top:65px;
+    }
+
+
+
+
+  @media screen and (max-width:768px) {
+    div#artspace_wrap {
+      margin-top:220px;
+      height:1000px !important;
+    }
+
+    ul#artspace_contents_list {
+      width:50% !important;
+      left:50% !important;
+      height:400px !important;
+      top:530px !important;
+      // background: red !important;
+    }
+
+  }
+
+ }
