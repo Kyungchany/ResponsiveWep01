@@ -110,7 +110,7 @@ window.addEventListener("load", ()=>{
         }
 
         //어바웃 footer영역
-        if(scrollHeight>3000){
+        if(scrollHeight>2900){
             gsap.to(aboutWrap, {opacity:1, duration:3, ease:"power1.out"})
         }else if(scrollHeight<2900){
             gsap.to(aboutWrap, {opacity:0, duration:1, ease:"power1.out"})

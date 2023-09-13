@@ -45,6 +45,10 @@ window.addEventListener("DOMContentLoaded", ()=>{
     // alert(reservationWrapWidth)
   }
   autoPlay()
+  
+  function autoPlay(){
+    autoSlide=setInterval(addVisualSlide, 5000)
+  }
 
   function stopAutoPlay(){ //마우스 올라가면 멈춤
     clearInterval(autoSlide)
@@ -121,8 +125,5 @@ window.addEventListener("DOMContentLoaded", ()=>{
     activateDot(nextIndex)
   }
 
-  function autoPlay(){
-    autoSlide=setInterval(addVisualSlide, 5000)
-  }
 
 })

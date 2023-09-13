@@ -4,6 +4,7 @@
   font-size: 0px;
   line-height: 0px;
   position: absolute;
+  z-index: 9999;
 }
 
 ul#skipmenulist > li > a:focus {
