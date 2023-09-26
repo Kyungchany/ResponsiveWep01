@@ -8,6 +8,8 @@ window.addEventListener("DOMContentLoaded", ()=>{
   const dot=document.querySelectorAll("#dot_list>li")
   
 
+  
+
 
 
   
@@ -42,6 +44,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
   function reservationResize(){
     reservationWrapWidth=reservationWrap.offsetWidth
+    gsap.set(prevBtn, {width:''})
     // alert(reservationWrapWidth)
   }
   autoPlay()

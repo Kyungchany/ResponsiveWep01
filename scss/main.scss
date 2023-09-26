@@ -693,15 +693,15 @@ div#visual_wrap {
   ul#culture_list>li:nth-child(1){
     opacity:1;
 
-    div.culture_img {
-      width:580px;
-      height:100%;
-      background:url("/images/cultureimg01.png") no-repeat center;
-      background-size: cover;
-    }
+    // div.culture_img {
+    //   width:580px;
+    //   height:100%;
+    //   background:url("/images/cultureimg01.png") no-repeat center;
+    //   background-size: cover;
+    // }
   }
 
-  @for $i from 2 to 6 {
+  @for $i from 1 to 6 {
     ul#culture_list>li:nth-child(#{$i}){
     
         div.culture_img {
@@ -740,6 +740,7 @@ div#visual_wrap {
     margin-bottom: 65px;
 
     li {
+      width:100%;
       position:relative;
       left:0px;
       top:0px;
@@ -784,6 +785,7 @@ div#visual_wrap {
     border-radius: 3px;
     color:$buttonColor;
     font:normal 13px "Noto Sans KR";
+    
   }
 
 
@@ -1306,7 +1308,6 @@ div#contact_us_list>ul>li:nth-child(4) {
       left:50% !important;
       height:400px !important;
       top:530px !important;
-      // background: red !important;
     }
 
   }
@@ -1318,6 +1319,56 @@ div#contact_us_list>ul>li:nth-child(4) {
   p.visual_title {
     font:bold 40px/30px "Noto Sans KR" !important;
   }
+  div#festival_wrap {
+    height:1800px !important;
+  }
+  ul#festival_list {
+    width:300px !important;
+  }
+  ul#festival_list>li {
+    text-align: center;
+    margin:20px auto !important;
+  }
+  button.festival_button {
+    left:50% !important;
+    margin-left:-67px;
+  }
+  ul#culture_list>li {
+  
+  }
+  p.culture_plan {
+    margin:0px auto !important;
+  }
+  p.culuture_title {
+    text-align: center !important;
+  }
+  ul.culture_infoname {
+    
+  }
+  ul.culture_infoname>li {
+    width:350px;
+    left:50% !important;
+    margin-left:-175px;
+    font-size:2vw !important;
+  }
+  p.culuture_title {
+   font-size:4vw !important;
+  }
+
+  button#reservation_button {
+    margin-left:100px;
+  }
+  button#prev_btn {
+    width:40px !important;
+    height:40px;
+    top:445px;
+  }
+    button#next_btn {
+    width:40px !important;
+    height:40px;
+    top:445px;
+  }
+  
 }
 @media screen and (max-width:444px) {
   p#quickservice_maintext {
@@ -1353,3 +1404,52 @@ div#contact_us_list>ul>li:nth-child(4) {
     width:220px !important;
   }
 }
+
+@media screen and (max-width:380px) {
+  div#newsletter_wrap {
+    height:300px;
+  }
+  div#news_info {
+    margin-top:20px !important;
+  }
+}
+
+@media screen and (max-width:640px) {
+  // footer#about_wrap {
+  //   height:150px;
+  // }
+  // div#aboutus {
+  //   display:none !important;
+  // }
+  // div#quick_link {
+  //   display: none ;
+  // }
+  // div#twitter {
+  //   display: none;
+  // }
+  // div#contact_us {
+  //   display: none;
+  // }
+  p#aboutus_text {
+    display: none !important;
+  }
+  div#quick_link_list {
+    display: none !important;
+  }
+  div#twitter_text {
+    display:none !important;
+  }
+  div#contact_us_list {
+    display: none !important;
+  }
+  div#aboutus_social {
+    margin-top:250px;
+  }
+  button#contact_button {
+    margin-top:240px;
+    margin-left:50px;
+  }
+
+  }
+
+
