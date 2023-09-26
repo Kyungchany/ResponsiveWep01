@@ -238,9 +238,6 @@ div#quickservice_wrap section#quickservice ul#quickservice_list li {
   transition: 0.2s ease-out;
   opacity: 0;
 }
-div#quickservice_wrap section#quickservice ul#quickservice_list li:hover {
-  background: yellow;
-}
 div#quickservice_wrap section#quickservice ul#quickservice_list li:hover p.quickservice_list_title {
   font: bold 12px "Noto Sans KR";
   color: black;
@@ -250,56 +247,72 @@ div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(1) 
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img01.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(1) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(2) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img02.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(2) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(3) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img03.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(3) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(4) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img04.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(4) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(5) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img05.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(5) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(6) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img06.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(6) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(7) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img07.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(7) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(8) > div.quickservice_list_img {
   width: 60px;
   height: 60px;
   line-height: 65px;
   box-shadow: 2px 2px 5px rgb(204, 204, 204);
-  background: url("/images/quickservice_img08.png") no-repeat center;
+}
+div#quickservice_wrap section#quickservice ul#quickservice_list li:nth-child(8) > div.quickservice_list_img:hover {
+  background: yellow;
 }
 div#quickservice_wrap section#quickservice ul#quickservice_list p.quickservice_list_title {
   width: 72px;
@@ -309,6 +322,10 @@ div#quickservice_wrap section#quickservice ul#quickservice_list p.quickservice_l
   top: 70px;
   font: normal 12px "Noto Sans KR";
   color: #666666;
+}
+
+div.quickservice_list_img > span {
+  color: #435061;
 }
 
 div#artspace_wrap {
@@ -1163,7 +1180,7 @@ div#contact_us_list > ul > li:nth-child(4) {
   }
   ul#quickservice_list li {
     width: 25% !important;
-    margin-top: 20px !important;
+    margin-top: 30px !important;
   }
   div.quickservice_list_img {
     position: absolute !important;
@@ -1299,5 +1316,44 @@ div#contact_us_list > ul > li:nth-child(4) {
     left: 50% !important;
     height: 400px !important;
     top: 530px !important;
+  }
+}
+@media screen and (max-width: 620px) {
+  p.visual_title {
+    font: bold 40px/30px "Noto Sans KR" !important;
+  }
+}
+@media screen and (max-width: 444px) {
+  p#quickservice_maintext {
+    width: 100%;
+    height: 100%;
+    font: bold 21px/21px "Noto Sans KR" !important;
+    color: #28374c;
+    padding-top: 58px;
+    box-sizing: border-box;
+  }
+  p#quickservice_subtext {
+    width: 100%;
+    height: 100%;
+    font: normal 13px/18px "Noto Sans KR";
+    padding-top: 15px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 485px) {
+  div#artspace_wrap {
+    height: 1000px !important;
+  }
+  p#artspace_info_text {
+    width: 100% !important;
+  }
+  ul#artspace_contents_list {
+    margin-top: -50px !important;
+  }
+  p#artspace_list_title {
+    width: 250px !important;
+  }
+  p#artspace_list_text {
+    width: 220px !important;
   }
 }

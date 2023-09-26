@@ -391,7 +391,7 @@ div#visual_wrap {
             opacity:0;
             
             &:hover {
-              background:yellow;
+              // background:yellow;
 
               p.quickservice_list_title {
                 font:bold 12px "Noto Sans KR";
@@ -406,7 +406,10 @@ div#visual_wrap {
               height:60px;
               line-height: 65px;
               box-shadow: 2px 2px 5px rgb(204, 204, 204);
-              background:url("/images/quickservice_img0#{$i}.png") no-repeat center;
+              // background:url("/images/quickservice_img0#{$i}.png") no-repeat center;
+              &:hover {
+                background: yellow;
+              }
             }
           }
           p.quickservice_list_title {
@@ -422,6 +425,10 @@ div#visual_wrap {
         }
     }
   }
+  div.quickservice_list_img>span {
+    color:#435061;
+  }
+
 
 
 
@@ -1134,8 +1141,9 @@ div#contact_us_list>ul>li:nth-child(4) {
    }
    ul#quickservice_list li{
       width:25%  !important;
-      margin-top:20px  !important;
+      margin-top:30px  !important;
     }
+
 
     div.quickservice_list_img {
      position:absolute !important;
@@ -1304,3 +1312,44 @@ div#contact_us_list>ul>li:nth-child(4) {
   }
 
  }
+
+ @media screen and (max-width:620px) {
+
+  p.visual_title {
+    font:bold 40px/30px "Noto Sans KR" !important;
+  }
+}
+@media screen and (max-width:444px) {
+  p#quickservice_maintext {
+    width:100%;
+    height:100%;
+    font:bold 21px/21px "Noto Sans KR" !important;
+    color:#28374c;
+    padding-top:58px;
+    box-sizing: border-box;
+  }
+  p#quickservice_subtext {
+    width:100%;
+    height:100%;
+    font:normal 13px/18px "Noto Sans KR";
+    padding-top:15px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width:485px) {
+  div#artspace_wrap {
+    height:1000px !important;
+  }
+  p#artspace_info_text {
+    width:100% !important;
+  }
+  ul#artspace_contents_list {
+    margin-top:-50px !important;
+  }
+  p#artspace_list_title {
+    width:250px !important;
+  }
+  p#artspace_list_text {
+    width:220px !important;
+  }
+}
